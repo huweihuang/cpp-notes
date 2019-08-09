@@ -6,7 +6,7 @@
 
 ### 1.1.1. 变量声明
 
-```c++
+```c
 <type> <variable_list>;
 ```
 
@@ -15,7 +15,7 @@
 
 例如：
 
-```c++
+```c
 int    i, j, k;
 char   c, ch;
 float  f, salary;
@@ -24,13 +24,13 @@ double d;
 
 ### 1.1.2. 声明并初始化
 
-```c++
+```c
 <type> <variable_name> = <value>;
 ```
 
 例如：
 
-```c++
+```c
 extern int d = 3, f = 5;    // d 和 f 的声明 
 int d = 3, f = 5;           // 定义并初始化 d 和 f
 byte z = 22;                // 定义并初始化 z
@@ -75,7 +75,7 @@ char x = 'x';               // 变量 x 的值为 'x'
 
 - 使用 **#define** 预处理器。
 
-```c++
+```c
 // define格式
 #define identifier value
 
@@ -87,7 +87,7 @@ char x = 'x';               // 变量 x 的值为 'x'
 
 - 使用 **const** 关键字。
 
-```c++
+```c
 // const格式
 const type variable = value;
 

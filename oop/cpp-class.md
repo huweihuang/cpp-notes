@@ -2,7 +2,7 @@
 
 ## 定义
 
-```c++
+```c
 return_type function_name( parameter list )
 {
    body of the function
@@ -11,7 +11,7 @@ return_type function_name( parameter list )
 
 示例
 
-```c++
+```c
 // 函数返回两个数中较大的那个数
 int max(int num1, int num2) 
 {
@@ -31,7 +31,7 @@ int max(int num1, int num2)
 
 ## 属性
 
-```c++
+```c
 class Box
 {
    // 公有的属性，类外部可以通过`.`的符号来访问 
@@ -52,7 +52,7 @@ class Box
 
 **内联的方式，定义在类的内部。**
 
-```c++
+```c
 class Box
 {
    public:
@@ -69,7 +69,7 @@ class Box
 
 **通过范围解析符 :: 来定义**
 
-```c++
+```c
 double Box::getVolume(void)
 {
     return length * breadth * height;
@@ -78,7 +78,7 @@ double Box::getVolume(void)
 
 **调用方法**
 
-```c++
+```c
 // 创建一个对象
 Box myBox;          
 // 调用该对象的成员函数
@@ -91,7 +91,7 @@ myBox.getVolume();
 
 构造函数的名称与类的名称是完全相同的，并且不会返回任何类型，也不会返回 void。构造函数可用于为某些成员变量设置初始值。
 
-```c++
+```c
 #include <iostream>
  
 using namespace std;
@@ -144,7 +144,7 @@ int main( )
 
 析构函数的名称与类的名称是完全相同的，只是在前面加了个波浪号（~）作为前缀，它不会返回任何值，也不能带有任何参数。析构函数有助于在跳出程序（比如关闭文件、释放内存等）前释放资源。
 
-```c++
+```c
 #include <iostream>
  
 using namespace std;

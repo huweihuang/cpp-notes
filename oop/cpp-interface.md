@@ -4,7 +4,7 @@
 
 C++ 接口是使用**抽象类**来实现的，如果类中至少有一个函数被声明为纯虚函数，则这个类就是抽象类。
 
-```c++
+```c
 class Box
 {
    public:
@@ -19,7 +19,7 @@ class Box
 
 示例如下：
 
-```c++
+```c
 #include <iostream>
  
 using namespace std;

@@ -4,13 +4,13 @@
 
 **格式**
 
-```c++
+```c
 class <子类>: <public/protected/private> <父类>
 ```
 
 **示例**
 
-```c++
+```c
 #include <iostream>
  
 using namespace std;
@@ -86,7 +86,7 @@ int main(void)
 
 格式
 
-```c++
+```c
 class <派生类名>:<继承方式1><基类名1>,<继承方式2><基类名2>,…
 {
 <派生类类体>
@@ -95,7 +95,7 @@ class <派生类名>:<继承方式1><基类名1>,<继承方式2><基类名2>,…
 
 示例
 
-```c++
+```c
 #include <iostream>
  
 using namespace std;
@@ -163,7 +163,7 @@ int main(void)
 
 **C++ 多态意味着调用成员函数时，会根据调用函数的对象的类型来执行不同的函数。**
 
-```c++
+```c
 #include <iostream> 
 using namespace std;
  
@@ -224,7 +224,7 @@ int main( )
 
 输出结果
 
-```c++
+```c
 Rectangle class area
 Triangle class area
 ```
@@ -235,7 +235,7 @@ Triangle class area
 
 我们想要的是在程序中任意点可以根据所调用的对象类型来选择调用的函数，这种操作被称为**动态链接**，或**后期绑定**。
 
-```c++
+```c
 class Shape {
    protected:
       int width, height;
@@ -258,7 +258,7 @@ class Shape {
 
 纯虚函数即虚函数没有具体的函数主体实现，只是一个声明。
 
-```c++
+```c
 class Shape {
    protected:
       int width, height;

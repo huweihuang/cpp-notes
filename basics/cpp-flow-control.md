@@ -6,7 +6,7 @@
 
 格式
 
-```c++
+```c
 if(boolean_expression)
 {
    // 如果布尔表达式为真将执行的语句
@@ -19,7 +19,7 @@ else
 
 示例
 
-```c++
+```c
 // 检查布尔条件
 if( a < 20 )
 {
@@ -39,7 +39,7 @@ else
 
 格式
 
-```c++
+```c
 for ( init; condition; increment )
 {
    statement(s);
@@ -48,7 +48,7 @@ for ( init; condition; increment )
 
 示例
 
-```c++
+```c
 // for 循环执行
 for( int a = 10; a < 20; a = a + 1 )
 {
@@ -60,7 +60,7 @@ for( int a = 10; a < 20; a = a + 1 )
 
 格式
 
-```c++
+```c
 while(condition)
 {
    statement(s);
@@ -69,7 +69,7 @@ while(condition)
 
 示例
 
-```c++
+```c
 // while 循环执行
 while( a < 20 )
 {
@@ -82,7 +82,7 @@ while( a < 20 )
 
 格式
 
-```c++
+```c
 do
 {
    statement(s);
@@ -92,7 +92,7 @@ do
 
 示例
 
-```c++
+```c
 // do 循环执行
 do
 {
@@ -112,7 +112,7 @@ do
 
 格式
 
-```c++
+```c
 switch(expression){
     case constant-expression  :
        statement(s);
@@ -129,7 +129,7 @@ switch(expression){
 
 示例
 
-```c++
+```c
 switch(grade)
 {
 case 'A' :
