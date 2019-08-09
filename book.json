@@ -43,14 +43,14 @@
             "url": "https://github.com/huweihuang"
         },
         "editlink": {
-            "base": "https://github.com/huweihuang/python-notes/blob/master/",
+            "base": "https://github.com/huweihuang/cpp-notes/blob/master/",
             "label": "编辑本页"
         },
         "image-captions": {
             "caption": "图片 - _CAPTION_"
         },
         "github-buttons": {
-            "repo": "huweihuang/python-notes",
+            "repo": "huweihuang/cpp-notes",
             "types": ["star"],
             "size": "small"
         },
@@ -77,7 +77,7 @@
             ]
         },
         "sitemap-general": {
-            "prefix": "https://www.huweihuang.com/python-notes/"
+            "prefix": "https://www.huweihuang.com/cpp-notes/"
         },
         "ga": {
             "token": "UA-114718458-2"
