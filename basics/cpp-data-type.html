@@ -360,7 +360,16 @@
 </code></pre>
 <ul>
 <li>type&#xFF1A;&#x8868;&#x793A;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</li>
-<li>variable_list&#xFF1A;&#x8868;&#x793A;&#x53D8;&#x91CF;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x53EF;&#x4EE5;&#x591A;&#x4E2A;&#x3002;</li>
+<li>variable_list&#xFF1A;&#x8868;&#x793A;&#x53D8;&#x91CF;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x53EF;&#x4EE5;&#x591A;&#x4E2A;&#xFF0C;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#xFF0C;&#x5206;&#x53F7;&#x7ED3;&#x675F;&#x3002;</li>
+</ul>
+<p>&#x53D8;&#x91CF;&#x547D;&#x540D;&#x89C4;&#x8303;&#xFF1A;</p>
+<ul>
+<li><p>&#x53D8;&#x91CF;&#x540D;&#x4E00;&#x822C;&#x4F7F;&#x7528;&#x5C0F;&#x5199;</p>
+</li>
+<li><p>&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x7528;&#x4E00;&#x822C;&#x7528;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x5F00;&#x5934;</p>
+</li>
+<li><p>&#x591A;&#x4E2A;&#x5355;&#x8BCD;&#x7528;&#x4E0B;&#x5212;&#x7EBF;&#x6216;&#x9A7C;&#x5CF0;&#x683C;&#x5F0F;</p>
+</li>
 </ul>
 <p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre class="language-"><code class="lang-c"><span class="token keyword">int</span>    i<span class="token punctuation">,</span> j<span class="token punctuation">,</span> k<span class="token punctuation">;</span>
@@ -377,38 +386,55 @@
 byte z <span class="token operator">=</span> <span class="token number">22</span><span class="token punctuation">;</span>                <span class="token comment">// &#x5B9A;&#x4E49;&#x5E76;&#x521D;&#x59CB;&#x5316; z</span>
 <span class="token keyword">char</span> x <span class="token operator">=</span> <span class="token string">&apos;x&apos;</span><span class="token punctuation">;</span>               <span class="token comment">// &#x53D8;&#x91CF; x &#x7684;&#x503C;&#x4E3A; &apos;x&apos;</span>
 </code></pre>
+<h3 id="113-&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;">1.1.3. &#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;</h3>
+<p>&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5927;&#x591A;&#x7528;&#x82B1;&#x62EC;&#x53F7;&#x5206;&#x9694;&#xFF0C;&#x5EFA;&#x8BAE;&#x5F53;&#x4F60;&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;&#x53D8;&#x91CF;&#x7684;&#x65F6;&#x5019;&#x518D;&#x5B9A;&#x4E49;&#x5B83;&#x3002;</p>
+<ul>
+<li><p>&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF1A;&#x6240;&#x6709;&#x82B1;&#x62EC;&#x53F7;&#x4E4B;&#x5916;</p>
+</li>
+<li><p>&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF1A;&#x82B1;&#x62EC;&#x53F7;&#x4E4B;&#x5185;</p>
+</li>
+<li><p>&#x5D4C;&#x5957;&#x4F5C;&#x7528;&#x57DF;&#xFF1A;&#x5185;&#x90E8;&#x540C;&#x540D;&#x53D8;&#x91CF;&#x4F1A;&#x8986;&#x76D6;&#x5916;&#x90E8;&#x540C;&#x540D;&#x53D8;&#x91CF;</p>
+</li>
+</ul>
 <h2 id="12-&#x53D8;&#x91CF;&#x7C7B;&#x578B;">1.2. &#x53D8;&#x91CF;&#x7C7B;&#x578B;</h2>
 <table>
 <thead>
 <tr>
 <th style="text-align:left">&#x7C7B;&#x578B;</th>
 <th style="text-align:left">&#x5173;&#x952E;&#x5B57;</th>
+<th>&#x5176;&#x4ED6;&#x7C7B;&#x578B;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left">&#x5E03;&#x5C14;&#x578B;</td>
 <td style="text-align:left">bool</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align:left">&#x5B57;&#x7B26;&#x578B;</td>
 <td style="text-align:left">char</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align:left">&#x6574;&#x578B;</td>
 <td style="text-align:left">int</td>
+<td>short &#x77ED;&#x6574;&#x578B;&#xFF0C;long &#x957F;&#x6574;&#x578B;&#xFF0C;long long &#x957F;&#x6574;&#x578B;</td>
 </tr>
 <tr>
 <td style="text-align:left">&#x6D6E;&#x70B9;&#x578B;</td>
 <td style="text-align:left">float</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align:left">&#x53CC;&#x6D6E;&#x70B9;&#x578B;</td>
 <td style="text-align:left">double</td>
+<td>long double&#x62D3;&#x5C55;&#x7CBE;&#x5EA6;&#x6D6E;&#x70B9;&#x6570;</td>
 </tr>
 <tr>
-<td style="text-align:left">&#x65E0;&#x7C7B;&#x578B;</td>
+<td style="text-align:left">&#x7A7A;&#x7C7B;&#x578B;</td>
 <td style="text-align:left">void</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align:left">&#x5BBD;&#x5B57;&#x7B26;&#x578B;</td>
@@ -417,7 +443,9 @@ byte z <span class="token operator">=</span> <span class="token number">22</span
 </tbody>
 </table>
 <h3 id="121-&#x6574;&#x578B;">1.2.1. &#x6574;&#x578B;</h3>
+<p>&#x4F7F;&#x7528;int&#x6267;&#x884C;&#x6574;&#x6570;&#x8FD0;&#x7B97;&#x3002;&#x5982;&#x679C;&#x8D85;&#x8FC7;int&#x7684;&#x8303;&#x56F4;&#xFF0C;&#x5219;&#x4F7F;&#x7528;long long&#x7C7B;&#x578B;&#x3002;</p>
 <h3 id="122-&#x6D6E;&#x70B9;&#x578B;">1.2.2. &#x6D6E;&#x70B9;&#x578B;</h3>
+<p>&#x5355;&#x7CBE;&#x5EA6;float&#xFF0C;32bit&#x8868;&#x793A;&#xFF0C;&#x53CC;&#x7CBE;&#x5EA6;double&#xFF0C;64bit&#x8868;&#x793A;&#x3002;&#x6D6E;&#x70B9;&#x8FD0;&#x7B97;&#x9009;&#x62E9;double&#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;float&#x4F1A;&#x7CBE;&#x5EA6;&#x4E0D;&#x591F;&#xFF0C;&#x800C;&#x5355;&#x7CBE;&#x5EA6;&#x548C;&#x53CC;&#x7CBE;&#x5EA6;&#x8BA1;&#x7B97;&#x4EE3;&#x4EF7;&#x76F8;&#x5DEE;&#x65E0;&#x51E0;&#x3002;</p>
 <h3 id="123-&#x5E03;&#x5C14;&#x578B;">1.2.3. &#x5E03;&#x5C14;&#x578B;</h3>
 <h3 id="124-&#x5B57;&#x7B26;&#x578B;">1.2.4. &#x5B57;&#x7B26;&#x578B;</h3>
 <h2 id="13-&#x53D8;&#x91CF;&#x4F5C;&#x7528;&#x57DF;">1.3. &#x53D8;&#x91CF;&#x4F5C;&#x7528;&#x57DF;</h2>
@@ -465,11 +493,76 @@ using namespace std<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <h1 id="3-&#x590D;&#x5408;&#x7C7B;&#x578B;">3. &#x590D;&#x5408;&#x7C7B;&#x578B;</h1>
-<h2 id="&#x6570;&#x7EC4;">&#x6570;&#x7EC4;</h2>
-<h2 id="&#x5B57;&#x7B26;&#x4E32;">&#x5B57;&#x7B26;&#x4E32;</h2>
-<h2 id="&#x6307;&#x9488;">&#x6307;&#x9488;</h2>
-<h2 id="&#x5F15;&#x7528;">&#x5F15;&#x7528;</h2>
-<h2 id="&#x7ED3;&#x6784;&#x4F53;struct">&#x7ED3;&#x6784;&#x4F53;(struct)</h2>
+<h2 id="30-&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x7684;using&#x58F0;&#x660E;">3.0. &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x7684;using&#x58F0;&#x660E;</h2>
+<p>&#x4F7F;&#x7528;&#x5230;&#x7684;&#x5E93;&#x51FD;&#x6570;&#x4E00;&#x822C;&#x5C5E;&#x4E8E;&#x67D0;&#x4E2A;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0B;&#xFF0C;&#x4F8B;&#x5982;<code>std::cin</code>&#x5C5E;&#x4E8E;&#x547D;&#x540D;&#x7A7A;&#x95F4;<code>std</code>&#xFF0C;&#x901A;&#x8FC7;&#x4F5C;&#x7528;&#x57DF;&#x64CD;&#x4F5C;&#x7B26;<code>::</code>&#x6765;&#x5F15;&#x7528;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>using</code>&#x58F0;&#x660E;&#xFF0C;&#x5219;&#x8C03;&#x7528;&#x65F6;&#x65E0;&#x9700;&#x6DFB;&#x52A0;&#x524D;&#x7F00;&#x3002;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">using</span> <span class="token keyword">namespace</span><span class="token operator">::</span>name<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x6BCF;&#x4E2A;&#x540D;&#x5B57;&#x90FD;&#x9700;&#x8981;&#x72EC;&#x7ACB;&#x7684;using&#x58F0;&#x660E;</strong></p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">using</span> std<span class="token operator">::</span>cin<span class="token punctuation">;</span>
+<span class="token keyword">using</span> std<span class="token operator">::</span>cout<span class="token punctuation">;</span>
+<span class="token keyword">using</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">&quot;enter two number&quot;</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> v1<span class="token punctuation">,</span>v2<span class="token punctuation">;</span>
+    cin <span class="token operator">&gt;&gt;</span> v1 <span class="token operator">&gt;&gt;</span> v2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x5934;&#x6587;&#x4EF6;&#x4E0D;&#x5305;&#x542B;using&#x58F0;&#x660E;</strong></p>
+<p>&#x5934;&#x6587;&#x4EF6;&#x4E00;&#x822C;&#x4E0D;&#x4F7F;&#x7528;using&#x58F0;&#x660E;&#xFF0C;&#x907F;&#x514D;&#x540D;&#x5B57;&#x51B2;&#x7A81;&#x3002;</p>
+<h2 id="31-&#x6570;&#x7EC4;">3.1. &#x6570;&#x7EC4;</h2>
+<h2 id="32-&#x5B57;&#x7B26;&#x4E32;string">3.2. &#x5B57;&#x7B26;&#x4E32;string</h2>
+<h2 id="33-&#x5411;&#x91CF;vector">3.3. &#x5411;&#x91CF;Vector</h2>
+<p>&#x6807;&#x51C6;&#x5E93;&#x7C7B;&#x578B;vector&#x8868;&#x793A;&#x5BF9;&#x8C61;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x5176;&#x4E2D;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x90FD;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x4F7F;&#x7528;vector&#xFF0C;&#x5148;&#x505A;&#x58F0;&#x660E;&#xFF1A;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span>;</span>
+<span class="token keyword">using</span> std<span class="token operator">::</span>vector<span class="token punctuation">;</span>
+</code></pre>
+<h2 id="33-&#x6307;&#x9488;">3.3. &#x6307;&#x9488;</h2>
+<p><strong>&#x6307;&#x9488;&#x7684;&#x5B9A;&#x4E49;</strong></p>
+<p>&#x6307;&#x9488;&#x662F;&#x6307;&#x5411;&#x53E6;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x590D;&#x5408;&#x7C7B;&#x578B;&#xFF0C;&#x672C;&#x8EAB;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x88AB;&#x8D4B;&#x503C;&#x548C;&#x62F7;&#x8D1D;&#x3002;&#x6307;&#x9488;&#x65E0;&#x9700;&#x5728;&#x5B9A;&#x4E49;&#x65F6;&#x8D4B;&#x503C;&#x3002;&#x901A;&#x8FC7;<code>*</code>&#x6765;&#x5B9A;&#x4E49;&#x6307;&#x9488;&#x3002;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">int</span> <span class="token operator">*</span>p1<span class="token punctuation">,</span> <span class="token operator">*</span>p2<span class="token punctuation">;</span> <span class="token comment">// p1&#xFF0C;p2&#x90FD;&#x662F;&#x6307;&#x5411;int&#x7C7B;&#x578B;&#x7684;&#x6307;&#x9488;</span>
+</code></pre>
+<p><strong>&#x83B7;&#x53D6;&#x5BF9;&#x8C61;&#x7684;&#x5730;&#x5740;</strong></p>
+<p>&#x6307;&#x9488;&#x5B58;&#x653E;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x4F7F;&#x7528;&#x53D6;&#x5730;&#x5740;&#x7B26;&#xFF08;&amp;&#xFF09;&#x83B7;&#x53D6;&#x8BE5;&#x5730;&#x5740;&#x3002;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">int</span> ival<span class="token operator">=</span><span class="token number">42</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token operator">*</span>p<span class="token operator">=</span><span class="token operator">&amp;</span>ival<span class="token punctuation">;</span> <span class="token comment">// p&#x5B58;&#x653E; ival&#x7684;&#x5730;&#x5740;</span>
+</code></pre>
+<p><strong>&#x6307;&#x9488;&#x7684;&#x503C;</strong></p>
+<p>&#x6307;&#x9488;&#x7684;&#x503C;&#xFF08;&#x5373;&#x5730;&#x5740;&#xFF09;&#x5E94;&#x5C5E;&#x4E8E;&#x4E0B;&#x5217;&#x56DB;&#x79CD;&#x72B6;&#x6001;&#x4E4B;&#x4E00;&#xFF1A;</p>
+<ul>
+<li><p>&#x6307;&#x5411;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;</p>
+</li>
+<li><p>&#x6307;&#x5B9A;&#x7D27;&#x90BB;&#x5BF9;&#x8C61;&#x6240;&#x5360;&#x7A7A;&#x95F4;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;</p>
+</li>
+<li><p>&#x7A7A;&#x6307;&#x9488;&#xFF0C;&#x6CA1;&#x6709;&#x6307;&#x5411;&#x4EFB;&#x4F55;&#x5BF9;&#x8C61;</p>
+</li>
+<li><p>&#x65E0;&#x6548;&#x6307;&#x9488;&#xFF0C;&#x5373;&#x4E0A;&#x8FF0;&#x60C5;&#x51B5;&#x4E4B;&#x5916;</p>
+</li>
+</ul>
+<p><strong>&#x7A7A;&#x6307;&#x9488;</strong></p>
+<p>&#x7A7A;&#x6307;&#x9488;&#x4E0D;&#x6307;&#x5411;&#x4EFB;&#x4F55;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x4F7F;&#x7528;&#x6307;&#x9488;&#x4E4B;&#x524D;&#x5E94;&#x68C0;&#x67E5;&#x8BE5;&#x6307;&#x9488;&#x662F;&#x5426;&#x4E3A;&#x7A7A;&#xFF0C;&#x751F;&#x6210;&#x7A7A;&#x6307;&#x9488;&#x7684;&#x65B9;&#x5F0F;&#x6709;&#xFF1A;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">int</span> <span class="token operator">*</span>p1<span class="token operator">=</span><span class="token keyword">nullptr</span><span class="token punctuation">;</span> <span class="token comment">// c++11&#x65B0;&#x5F15;&#x5165;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x8BE5;&#x65B9;&#x5F0F;</span>
+<span class="token keyword">int</span> <span class="token operator">*</span>p2<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token operator">*</span>p3<span class="token operator">=</span><span class="token constant">NULL</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x5EFA;&#x8BAE;&#x521D;&#x59CB;&#x5316;&#x6240;&#x6709;&#x6307;&#x9488;&#xFF0C;&#x907F;&#x514D;&#x8BBF;&#x95EE;&#x7A7A;&#x6307;&#x9488;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x5D29;&#x6E83;&#x3002;</p>
+<p><strong>&#x8D4B;&#x503C;&#x548C;&#x6307;&#x9488;</strong></p>
+<p>&#x7ED9;&#x6307;&#x9488;&#x8D4B;&#x503C;&#x5C31;&#x662F;&#x4EE4;&#x4ED6;&#x5B58;&#x653E;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<p><strong>&#x6307;&#x9488;&#x7684;&#x6307;&#x9488;</strong></p>
+<p>&#x6307;&#x9488;&#x4E5F;&#x6709;&#x5185;&#x5B58;&#x5730;&#x5740;&#xFF0C;&#x56E0;&#x6B64;&#x6307;&#x9488;&#x7684;&#x6307;&#x9488;&#x8868;&#x793A;&#x6307;&#x9488;&#x7684;&#x5185;&#x5B58;&#x5730;&#x5740;&#x3002;</p>
+<h2 id="34-&#x5F15;&#x7528;">3.4. &#x5F15;&#x7528;</h2>
+<p>&#x5F15;&#x7528;&#x4E3A;&#x5BF9;&#x8C61;&#x8D77;&#x4E86;&#x53E6;&#x5916;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x901A;&#x8FC7;<code>&amp;d</code>&#x7684;&#x683C;&#x5F0F;&#x6765;&#x5B9A;&#x4E49;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x3002;&#x5F15;&#x7528;&#x5E76;&#x975E;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x522B;&#x540D;&#x3002;</p>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">int</span> ival <span class="token operator">=</span> <span class="token number">1024</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token operator">&amp;</span>refVal <span class="token operator">=</span> ival<span class="token punctuation">;</span> <span class="token comment">// refVal&#x662F;ival&#x53E6;&#x5916;&#x7684;&#x540D;&#x5B57;</span>
+</code></pre>
+<h2 id="35-&#x7ED3;&#x6784;&#x4F53;struct">3.5. &#x7ED3;&#x6784;&#x4F53;(struct)</h2>
+<pre class="language-"><code class="lang-cpp"><span class="token keyword">struct</span> Sales_data<span class="token punctuation">{</span>
+    std<span class="token operator">::</span>string bookNo<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> units_sold<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">double</span> revenue <span class="token operator">=</span><span class="token number">0.0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
 <h1 id="4-&#x7279;&#x6B8A;&#x7C7B;&#x578B;">4. &#x7279;&#x6B8A;&#x7C7B;&#x578B;</h1>
 <p>&#x53C2;&#x8003;&#xFF1A;</p>
 <ul>
@@ -477,7 +570,7 @@ using namespace std<span class="token punctuation">;</span>
 <li><a href="https://www.runoob.com/cplusplus/cpp-tutorial.html" target="_blank">https://www.runoob.com/cplusplus/cpp-tutorial.html</a> </li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; www.huweihuang.com 2017-2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Updated at 
-2019-08-09 20:17:16
+2022-03-17 22:37:05
 </span></footer>
                                 
                                 </section>
@@ -521,7 +614,7 @@ using namespace std<span class="token punctuation">;</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"数据类型","level":"2.2","depth":1,"next":{"title":"流程语句","level":"2.3","depth":1,"path":"basics/cpp-flow-control.md","ref":"basics/cpp-flow-control.md","articles":[]},"previous":{"title":"基本语法","level":"2.1","depth":1,"path":"basics/cpp-basics.md","ref":"basics/cpp-basics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","codesnippet","splitter","page-toc-button","image-captions","editlink","back-to-top-button","-lunr","-search","search-plus","github-buttons@2.1.0","favicon@^0.0.2","tbfed-pagefooter@^0.0.1","3-ba","theme-default","-highlight","prism","prism-themes","sitemap-general","ga","disqus","donate"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © www.huweihuang.com 2017-2018","modify_label":"Updated at ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"huweihuang"},"github":{"url":"https://github.com/huweihuang"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/huweihuang/cpp-notes/blob/master/"},"splitter":{},"donate":{"alipay":"http://ozilwgpje.bkt.clouddn.com/donate/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"http://ozilwgpje.bkt.clouddn.com/donate/wechatpay.jpg","wechatText":"微信打赏"},"codesnippet":{},"sitemap-general":{"prefix":"https://www.huweihuang.com/cpp-notes/"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/favicon.ico","appleTouchMore":{"120x120":"images/favicon.ico","180x180":"images/favicon.ico"}},"page-toc-button":{},"back-to-top-button":{},"prism-themes":{},"github-buttons":{"repo":"huweihuang/cpp-notes","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"e146d71b77957235bba1e709d930f62e"},"ga":{"configuration":"auto","token":"UA-114718458-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{},"image-captions":{"caption":"图片 - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"胡伟煌","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"C++ 学习笔记","language":"zh-hans","links":{"sidebar":{"胡伟煌的博客":"https://www.huweihuang.com","Kubernetes 学习笔记":"https://www.huweihuang.com/kubernetes-notes/","Golang 学习笔记":"https://www.huweihuang.com/golang-notes/","Linux 学习笔记":"https://www.huweihuang.com/linux-notes/","数据结构学习笔记":"https://www.huweihuang.com/data-structure-notes/","Python 学习笔记":"https://www.huweihuang.com/python-notes/","Blockchain 学习笔记":"https://www.huweihuang.com/blockchain-notes/"}},"gitbook":"*","description":"C++ 学习笔记"},"file":{"path":"basics/cpp-data-type.md","mtime":"2019-08-09T12:17:16.362Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-09T12:28:16.650Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"数据类型","level":"2.2","depth":1,"next":{"title":"流程语句","level":"2.3","depth":1,"path":"basics/cpp-flow-control.md","ref":"basics/cpp-flow-control.md","articles":[]},"previous":{"title":"基本语法","level":"2.1","depth":1,"path":"basics/cpp-basics.md","ref":"basics/cpp-basics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","codesnippet","splitter","page-toc-button","image-captions","editlink","back-to-top-button","-lunr","-search","search-plus","github-buttons@2.1.0","favicon@^0.0.2","tbfed-pagefooter@^0.0.1","3-ba","theme-default","-highlight","prism","prism-themes","sitemap-general","ga","disqus","donate"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © www.huweihuang.com 2017-2018","modify_label":"Updated at ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"useIdentifier":false,"shortName":"huweihuang"},"github":{"url":"https://github.com/huweihuang"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/huweihuang/cpp-notes/blob/master/"},"splitter":{},"donate":{"alipay":"https://res.cloudinary.com/dqxtn0ick/image/upload/v1551599640/blog/donate/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://res.cloudinary.com/dqxtn0ick/image/upload/v1551599472/blog/donate/wechatpay.jpg","wechatText":"微信打赏"},"codesnippet":{},"sitemap-general":{"prefix":"https://www.huweihuang.com/cpp-notes/"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/favicon.ico","appleTouchMore":{"120x120":"images/favicon.ico","180x180":"images/favicon.ico"}},"page-toc-button":{},"back-to-top-button":{},"prism-themes":{},"github-buttons":{"repo":"huweihuang/cpp-notes","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"e146d71b77957235bba1e709d930f62e"},"ga":{"configuration":"auto","token":"UA-114718458-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{},"image-captions":{"caption":"图片 - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"胡伟煌","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"C++ 学习笔记","language":"zh-hans","links":{"sidebar":{"胡伟煌的博客":"https://www.huweihuang.com","Kubernetes 学习笔记":"https://www.huweihuang.com/kubernetes-notes/","Golang 学习笔记":"https://www.huweihuang.com/golang-notes/","Linux 学习笔记":"https://www.huweihuang.com/linux-notes/","数据结构学习笔记":"https://www.huweihuang.com/data-structure-notes/","Python 学习笔记":"https://www.huweihuang.com/python-notes/","Blockchain 学习笔记":"https://www.huweihuang.com/blockchain-notes/"}},"gitbook":">= 3.2.2","description":"C++ 学习笔记"},"file":{"path":"basics/cpp-data-type.md","mtime":"2022-03-17T14:37:05.834Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-19T14:01:40.511Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
