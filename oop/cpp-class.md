@@ -1,6 +1,6 @@
-# 函数
+# 1. 函数
 
-## 定义
+## 1.1. 定义
 
 ```c
 return_type function_name( parameter list )
@@ -17,19 +17,19 @@ int max(int num1, int num2)
 {
    // 局部变量声明
    int result;
- 
+
    if (num1 > num2)
       result = num1;
    else
       result = num2;
- 
+
    return result; 
 }
 ```
 
-# 类
+# 2. 类
 
-## 属性
+## 2.1. 属性
 
 ```c
 class Box
@@ -48,7 +48,7 @@ class Box
 };
 ```
 
-## 方法
+## 2.2. 方法
 
 **内联的方式，定义在类的内部。**
 
@@ -59,7 +59,7 @@ class Box
       double length;      // 长度
       double breadth;     // 宽度
       double height;      // 高度
-   
+
       double getVolume(void)   // 公有的方法
       {
          return length * breadth * height;
@@ -85,7 +85,26 @@ Box myBox;
 myBox.getVolume();  
 ```
 
-## 构造函数
+### `::`和`->`的使用
+
+c++中如果定义的类对象是指针对象的时候，用`->`来指向类中的成员；如果类对象是一般对象则用`.`来指向类中的成员。
+
+```cpp
+class A
+{　　
+    public play();
+}
+
+
+A *p则使用：p->play(); // 左边是结构指针。
+A p 则使用：p.paly(); // 左边是结构变量。
+```
+
+`::`域操作符的用法
+
+- 在类外部声明成员函数。void A::Print(){};
+
+## 2.3. 构造函数
 
 类的**构造函数**是类的一种特殊的成员函数，它会在每次创建类的新对象时执行。
 
@@ -93,32 +112,32 @@ myBox.getVolume();
 
 ```c
 #include <iostream>
- 
+
 using namespace std;
- 
+
 class Line
 {
    public:
       void setLength( double len );
       double getLength( void );
       Line(double len);  // 这是构造函数
- 
+
    private:
       double length;
 };
- 
+
 // 成员函数定义，包括构造函数
 Line::Line( double len)
 {
     cout << "Object is being created, length = " << len << endl;
     length = len;
 }
- 
+
 void Line::setLength( double len )
 {
     length = len;
 }
- 
+
 double Line::getLength( void )
 {
     return length;
@@ -127,18 +146,18 @@ double Line::getLength( void )
 int main( )
 {
    Line line(10.0);
- 
+
    // 获取默认设置的长度
    cout << "Length of line : " << line.getLength() <<endl;
    // 再次设置长度
    line.setLength(6.0); 
    cout << "Length of line : " << line.getLength() <<endl;
- 
+
    return 0;
 }
 ```
 
-## 析构函数
+## 2.4. 析构函数
 
 类的**析构函数**是类的一种特殊的成员函数，它会在每次删除所创建的对象时执行。
 
@@ -146,9 +165,9 @@ int main( )
 
 ```c
 #include <iostream>
- 
+
 using namespace std;
- 
+
 class Line
 {
    public:
@@ -156,11 +175,11 @@ class Line
       double getLength( void );
       Line();   // 这是构造函数声明
       ~Line();  // 这是析构函数声明
- 
+
    private:
       double length;
 };
- 
+
 // 成员函数定义，包括构造函数
 Line::Line(void)
 {
@@ -170,12 +189,12 @@ Line::~Line(void)
 {
     cout << "Object is being deleted" << endl;
 }
- 
+
 void Line::setLength( double len )
 {
     length = len;
 }
- 
+
 double Line::getLength( void )
 {
     return length;
@@ -184,11 +203,11 @@ double Line::getLength( void )
 int main( )
 {
    Line line;
- 
+
    // 设置长度
    line.setLength(6.0); 
    cout << "Length of line : " << line.getLength() <<endl;
- 
+
    return 0;
 }
 ```

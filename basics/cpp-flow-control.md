@@ -120,7 +120,7 @@ switch(expression){
     case constant-expression  :
        statement(s);
        break; // 可选的
-  
+
     // 您可以有任意数量的 case 语句
     default : // 可选的
        statement(s);
@@ -149,8 +149,6 @@ default :
    cout << "无效的成绩" << endl;
 }
 ```
-
-
 
 参考：
 
