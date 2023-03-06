@@ -5,15 +5,17 @@ set -e
 
 MESSAGE=$1
 
-PROGRAM="cpp"
-GITBOOK_DIR="/Users/weihuanghu/hexo/gitbook"
-MASTER_DIR="${GITBOOK_DIR}/${PROGRAM}-notes"
-GHPAGE_DIR="${GITBOOK_DIR}/${PROGRAM}-gh-pages"
+MASTER_DIR="$(pwd)"
+GHPAGE_DIR="${MASTER_DIR}/gh-pages"
+NOTE_NAME="cpp-notes"
 
 # build
 gitbook build
 
 # clean GHPAGE_DIR
+if [ ! -d $GHPAGE_DIR  ];then
+    git clone -b gh-pages https://github.com/huweihuang/${NOTE_NAME}.git gh-pages
+fi
 rm -fr ${GHPAGE_DIR}/*
 
 # copy _book to GHPAGE_DIR
